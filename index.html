@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Slideshow</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .slideshow {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+        .slide {
+            min-width: 25%;
+            box-sizing: border-box;
+             margin-right: 1rem;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="w-full max-w-4xl overflow-hidden">
+        <div class="relative">
+            <h1 class="text-green-500 font-bold ">Landcot Property</h1>
+            <div id="slideshow" class="slideshow rounded-lg">
+                <div class="slide bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/564x/91/4c/d4/914cd4e277f8e6ea6db8db0423575b34.jpg" alt="Property 1" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Porche</h2>
+                        <div class="flex justify-between text-gray-700">
+                            <span class="text-sm"><i class="fas fa-users"></i> 35</span>
+                            <span class="text-sm"><i class="fas fa-heart"></i> 42</span>
+                        </div>
+                        <p class="text-gray-700">$169,000</p>
+                        <p class="text-gray-500">4 bds | 3 ba | 3,275 sqft | Active</p>
+                        <p class="text-gray-500">Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="slide bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/564x/0b/97/3e/0b973e990d2584939196815a92aa3b58.jpg" alt="Property 2" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Elegance</h2>
+                        <div class="flex justify-between text-gray-700">
+                            <span class="text-sm"><i class="fas fa-users"></i> 35</span>
+                            <span class="text-sm"><i class="fas fa-heart"></i> 42</span>
+                        </div>
+                        <p class="text-gray-700">$250,000</p>
+                        <p class="text-gray-500">4 bds | 3 ba | 3,275 sqft | Active</p>
+                        <p class="text-gray-500">Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="slide bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/564x/55/1e/cd/551ecdf117fabd64c083d05bbceaef36.jpg" alt="Property 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Modern</h2>
+                        <div class="flex justify-between text-gray-700">
+                            <span class="text-sm"><i class="fas fa-users"></i> 20</span>
+                            <span class="text-sm"><i class="fas fa-heart"></i> 85</span>
+                        </div>
+                        <p class="text-gray-700">$180,000</p>
+                        <p class="text-gray-500">4 bds | 3 ba | 3,275 sqft | Active</p>
+                        <p class="text-gray-500">Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="slide bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/564x/91/4c/d4/914cd4e277f8e6ea6db8db0423575b34.jpg" alt="Property 4" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Luxury</h2>
+                        <div class="flex justify-between text-gray-700">
+                            <span class="text-sm"><i class="fas fa-users"></i> 50</span>
+                            <span class="text-sm"><i class="fas fa-heart"></i> 60</span>
+                        </div>
+                        <p class="text-gray-700">$350,000</p>
+                        <p class="text-gray-500">4 bds | 3 ba | 3,275 sqft | Active</p>
+                        <p class="text-gray-500">Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="slide bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/564x/27/2f/eb/272feb749f0a580412f64ce35259eb65.jpg" alt="Property 4" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Cedar Ridge Condominiums </h2>
+                        <div class="flex justify-between text-gray-700">
+                            <span class="text-sm"><i class="fas fa-users"></i> 50</span>
+                            <span class="text-sm"><i class="fas fa-heart"></i> 60</span>
+                        </div>
+                        <p class="text-gray-700">$350,000</p>
+                        <p class="text-gray-500">4 bds | 3 ba | 3,275 sqft | Active</p>
+                        <p class="text-gray-500">Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="slide bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/564x/98/f8/ee/98f8eea95d602cd2b8c4f4bb78871d87.jpg" alt="Property 4" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Riverside Haven</h2>
+                        <div class="flex justify-between text-gray-700">
+                            <span class="text-sm"><i class="fas fa-users"></i> 50</span>
+                            <span class="text-sm"><i class="fas fa-heart"></i> 60</span>
+                        </div>
+                        <p class="text-gray-700">$350,000</p>
+                        <p class="text-gray-500">4 bds | 3 ba | 3,275 sqft | Active</p>
+                        <p class="text-gray-500">Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="slide bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/564x/a9/eb/95/a9eb95d35ff6e1f439678773bd02668e.jpg" alt="Property 4" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Silver Creek Homes</h2>
+                        <div class="flex justify-between text-gray-700">
+                            <span class="text-sm"><i class="fas fa-users"></i> 50</span>
+                            <span class="text-sm"><i class="fas fa-heart"></i> 60</span>
+                        </div>
+                        <p class="text-gray-700">$350,000</p>
+                        <p class="text-gray-500">4 bds | 3 ba | 3,275 sqft | Active</p>
+                        <p class="text-gray-500">Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="slide bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/564x/43/d6/26/43d626a0cb449128493297a2654c4d51.jpg" alt="Property 4" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Lakeside Manor</h2>
+                        <div class="flex justify-between text-gray-700">
+                            <span class="text-sm"><i class="fas fa-users"></i> 50</span>
+                            <span class="text-sm"><i class="fas fa-heart"></i> 60</span>
+                        </div>
+                        <p class="text-gray-700">$350,000</p>
+                        <p class="text-gray-500">4 bds | 3 ba | 3,275 sqft | Active</p>
+                        <p class="text-gray-500">Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="slide bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/564x/99/22/a3/9922a391c97216229930327c212aaf62.jpg" alt="Property 4" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Greenfield Meadows</h2>
+                        <div class="flex justify-between text-gray-700">
+                            <span class="text-sm"><i class="fas fa-users"></i> 50</span>
+                            <span class="text-sm"><i class="fas fa-heart"></i> 60</span>
+                        </div>
+                        <p class="text-gray-700">$350,000</p>
+                        <p class="text-gray-500">4 bds | 3 ba | 3,275 sqft | Active</p>
+                        <p class="text-gray-500">Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="slide bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/564x/43/d6/26/43d626a0cb449128493297a2654c4d51.jpg" alt="Property 4" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Harbor Heights</h2>
+                        <div class="flex justify-between text-gray-700">
+                            <span class="text-sm"><i class="fas fa-users"></i> 50</span>
+                            <span class="text-sm"><i class="fas fa-heart"></i> 60</span>
+                        </div>
+                        <p class="text-gray-700">$350,000</p>
+                        <p class="text-gray-500">4 bds | 3 ba | 3,275 sqft | Active</p>
+                        <p class="text-gray-500">Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="slide bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/564x/a9/eb/95/a9eb95d35ff6e1f439678773bd02668e.jpg" alt="Property 4" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Sunset Villas</h2>
+                        <div class="flex justify-between text-gray-700">
+                            <span class="text-sm"><i class="fas fa-users"></i> 50</span>
+                            <span class="text-sm"><i class="fas fa-heart"></i> 60</span>
+                        </div>
+                        <p class="text-gray-700">$350,000</p>
+                        <p class="text-gray-500">4 bds | 3 ba | 3,275 sqft | Active</p>
+                        <p class="text-gray-500">Nairobi, Kenya</p>
+                    </div>
+                </div>
+            </div>
+            <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 p-3 bg-gray-700 text-white rounded-full">❮</button>
+            <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 p-3 bg-gray-700 text-white rounded-full">❯</button>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="slideshow.js"></script>
+</body>
+</html>
